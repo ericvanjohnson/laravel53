@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -300,7 +299,6 @@ th {
     .table {
         border-collapse: collapse !important;
     }
-
     .table td,
     .table th {
         background-color: #fff !important;
@@ -3691,7 +3689,6 @@ select[multiple].input-lg,
         display: inline-table;
         vertical-align: middle;
     }
-
     .form-inline .input-group .input-group-addon,
     .form-inline .input-group .input-group-btn,
     .form-inline .input-group .form-control {
@@ -3714,7 +3711,6 @@ select[multiple].input-lg,
         margin-bottom: 0;
         vertical-align: middle;
     }
-
     .form-inline .radio label,
     .form-inline .checkbox label {
         padding-left: 0;
@@ -4924,7 +4920,6 @@ tbody.collapse.in {
         border-bottom: 1px solid #ddd;
         border-radius: 4px 4px 0 0;
     }
-
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
@@ -5223,17 +5218,14 @@ tbody.collapse.in {
         margin-bottom: 0;
         vertical-align: middle;
     }
-
     .navbar-form .form-control {
         display: inline-block;
         width: auto;
         vertical-align: middle;
     }
-
     .navbar-form .form-control-static {
         display: inline-block;
     }
-
     .navbar-form .input-group {
         display: inline-table;
         vertical-align: middle;
@@ -5244,16 +5236,13 @@ tbody.collapse.in {
     .navbar-form .input-group .form-control {
         width: auto;
     }
-
     .navbar-form .input-group > .form-control {
         width: 100%;
     }
-
     .navbar-form .control-label {
         margin-bottom: 0;
         vertical-align: middle;
     }
-
     .navbar-form .radio,
     .navbar-form .checkbox {
         display: inline-block;
@@ -5266,13 +5255,11 @@ tbody.collapse.in {
     .navbar-form .checkbox label {
         padding-left: 0;
     }
-
     .navbar-form .radio input[type="radio"],
     .navbar-form .checkbox input[type="checkbox"] {
         position: relative;
         margin-left: 0;
     }
-
     .navbar-form .has-feedback .form-control-feedback {
         top: 0;
     }
@@ -5351,7 +5338,6 @@ tbody.collapse.in {
         float: right !important;
         margin-right: -15px;
     }
-
     .navbar-right ~ .navbar-right {
         margin-right: 0;
     }
@@ -5425,12 +5411,10 @@ tbody.collapse.in {
         color: #333;
         background-color: transparent;
     }
-
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #555;
         background-color: #eeeeee;
     }
-
     .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
         color: #ccc;
         background-color: transparent;
@@ -5522,11 +5506,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
         border-color: #090909;
     }
-
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
         background-color: #090909;
     }
-
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #9d9d9d;
     }
@@ -5535,12 +5517,10 @@ fieldset[disabled] .navbar-default .btn-link:focus {
         color: #fff;
         background-color: transparent;
     }
-
     .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
         color: #fff;
         background-color: #090909;
     }
-
     .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
         color: #444;
         background-color: transparent;

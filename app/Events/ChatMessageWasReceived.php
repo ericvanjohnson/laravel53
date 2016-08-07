@@ -11,7 +11,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
 class ChatMessageWasReceived extends \Event implements ShouldBroadcast
 {
-    use InteractsWithSockets, SerializesModels;
+    use InteractsWithSockets;
 
     public $chatMessage;
     public $user;
@@ -34,8 +34,6 @@ class ChatMessageWasReceived extends \Event implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return [
-            "chat-room.1"
-        ];
+        return [new PrivateChannel('channel-one')];
     }
 }

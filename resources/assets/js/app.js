@@ -14,7 +14,10 @@ require('./bootstrap');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('pusher', require('./components/Pusher.vue'));
 
 var app = new Vue({
     el: 'body'
 });
+
+
