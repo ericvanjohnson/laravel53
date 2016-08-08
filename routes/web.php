@@ -19,6 +19,11 @@ Route::get('pusher', function () {
     return view('pusher');
 });
 
+Route::get('loop', function () {
+    $posts = App\Post::all();
+    return view('loop', ['posts' => $posts]);
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
