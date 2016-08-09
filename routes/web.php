@@ -20,9 +20,10 @@ Route::get('pusher', function () {
 });
 
 Route::get('loop', function () {
-    $posts = App\Post::all();
-    return view('loop', ['posts' => $posts]);
+    return view('loop')
+        ->with('posts', \App\Post::paginate(10));
 });
+
 
 Auth::routes();
 
