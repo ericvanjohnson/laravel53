@@ -7,3 +7,5 @@ Homestead.json
 tags
 /.phpstorm.meta.php
 /_ide_helper.php
+/public/css/
+/.idea
