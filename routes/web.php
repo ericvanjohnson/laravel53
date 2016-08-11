@@ -24,6 +24,11 @@ Route::get('loop', function () {
         ->with('posts', \App\Post::paginate(10));
 });
 
+Route::get('dbquery', function () {
+    $posts = DB::table('posts')->get();
+    dd($posts);
+});
+
 
 Auth::routes();
 
