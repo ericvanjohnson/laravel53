@@ -9,7 +9,8 @@
         "laravel/framework": "5.3.*",
         "jenssegers/rollbar": "^1.5",
         "barryvdh/laravel-ide-helper": "^2.2",
-        "pusher/pusher-php-server": "~2.0"
+        "pusher/pusher-php-server": "~2.0",
+        "laravel/scout": "^0.1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
