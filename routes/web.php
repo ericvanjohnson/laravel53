@@ -11,6 +11,8 @@
 |
 */
 
+use \App\Mail\Reminder;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -27,6 +29,10 @@ Route::get('loop', function () {
 Route::get('dbquery', function () {
     $posts = DB::table('posts')->get();
     dd($posts);
+});
+
+Route::get('email', function () {
+    return Mail::to('group@sdlug.com')->send(new Reminder);
 });
 
 
