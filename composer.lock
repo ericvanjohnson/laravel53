@@ -4,9 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "29217f247e5ffb18c96a85c87cc079ad",
-    "content-hash": "15c43d25ba055d4f4ea6ede238a8a6b0",
+    "hash": "5e4dfc3d19322c1b514cebc17d2845e1",
+    "content-hash": "815f8900e951133f85aef16be23371e4",
     "packages": [
+        {
+            "name": "algolia/algoliasearch-client-php",
+            "version": "1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/algolia/algoliasearch-client-php.git",
+                "reference": "66c15d546bf0cbf86b192704f161da17c93d3b15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/66c15d546bf0cbf86b192704f161da17c93d3b15",
+                "reference": "66c15d546bf0cbf86b192704f161da17c93d3b15",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0",
+                "satooshi/php-coveralls": "0.6.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "AlgoliaSearch": "src/",
+                    "AlgoliaSearch\\Tests": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Algolia Team",
+                    "email": "contact@algolia.com"
+                },
+                {
+                    "name": "Ryan T. Catlin",
+                    "email": "ryan.catlin@gmail.com"
+                },
+                {
+                    "name": "Jonathan H. Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "Algolia Search API Client for PHP",
+            "homepage": "https://github.com/algolia/algoliasearch-client-php",
+            "time": "2016-08-05 13:06:14"
+        },
         {
             "name": "barryvdh/laravel-ide-helper",
             "version": "v2.2.1",
@@ -601,16 +652,16 @@
         },
         {
             "name": "laravel/scout",
-            "version": "v0.1.1",
+            "version": "v0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/scout.git",
-                "reference": "68d8171c7df5802f47fe9cb725c5e5452f96ddf9"
+                "reference": "fdf4030d6921aec38c51cf546fd28e8672cbc878"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/scout/zipball/68d8171c7df5802f47fe9cb725c5e5452f96ddf9",
-                "reference": "68d8171c7df5802f47fe9cb725c5e5452f96ddf9",
+                "url": "https://api.github.com/repos/laravel/scout/zipball/fdf4030d6921aec38c51cf546fd28e8672cbc878",
+                "reference": "fdf4030d6921aec38c51cf546fd28e8672cbc878",
                 "shasum": ""
             },
             "require": {
@@ -657,7 +708,7 @@
                 "laravel",
                 "search"
             ],
-            "time": "2016-08-19 15:54:19"
+            "time": "2016-08-22 00:18:05"
         },
         {
             "name": "league/flysystem",

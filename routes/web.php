@@ -35,6 +35,14 @@ Route::get('email', function () {
     return Mail::to('group@sdlug.com')->send(new Reminder);
 });
 
+Route::get('email-queue', function () {
+    return Mail::to('group@sdlug.com')->queue(new Reminder);
+});
+
+Route::get('email-later', function () {
+    $when = Carbon\Carbon::now()->addMinutes(1);
+    return Mail::to('group@sdlug.com')->later($when, new Reminder);
+});
 
 Auth::routes();
 
