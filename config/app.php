@@ -167,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Laravel\Scout\ScoutServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -180,8 +181,6 @@ return [
         /*
          * Additional Service Providers
          */
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
-        Laravel\Scout\ScoutServiceProvider::class,
 
     ],
 
