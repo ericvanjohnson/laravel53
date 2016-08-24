@@ -44,6 +44,11 @@ Route::get('email-later', function () {
     return Mail::to('group@sdlug.com')->later($when, new Reminder);
 });
 
+Route::get('search', function () {
+    return App\Post::search('sdlug')->get();
+    //dd(App\Post::search('sdlug')->get());
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
