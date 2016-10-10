@@ -4,5 +4,5 @@ parameters:
     tasks:
       phpcs:
         standard: PSR2
-        ignore_patterns: [./tests/*, ./resources/*, ./database/*, ./bootstrap/*, ./app/ChatMessage.php]
+        ignore_patterns: [./tests/*, ./resources/*, ./database/*, ./bootstrap/*, ./app/ChatMessage.php, ./docker/*]
       phpunit:

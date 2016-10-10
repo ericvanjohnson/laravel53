@@ -1,0 +1,35 @@
+nginx:
+    build: ./nginx/
+    container_name: web-container
+    ports:
+        - 80:80
+    links:
+        - php
+    volumes_from:
+        - app
+
+php:
+    build: ./php/
+    container_name: application-container
+    expose:
+        - 9000
+    links:
+        - postgresql
+    volumes_from:
+        - app
+
+app:
+    image: php:7.0-fpm
+    volumes:
+        - ../.:/var/www/html
+    command: "true"
+
+postgresql:
+    image: postgres:latest
+    container_name: database-container-postgres
+    ports:
+        - 5432:5432
+    environment:
+        POSTGRES_PASSWORD: secret
+        POSTGRES_DB: myapp
+
