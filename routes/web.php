@@ -22,8 +22,31 @@ Route::get('pusher', function () {
 });
 
 Route::get('loop', function () {
-    return view('loop')
-        ->with('posts', \App\Post::paginate(10));
+    //$posts = [
+    //    ["id" => 1,
+    //     "user_id" => 1,
+    //     "title" => "Et veritatis.",
+    //     "body" => "Sit recusandae aut omnis qui suscipit et quia fuga iusto.",
+    //     "created_at" => "2016-11-16 08:04:28",
+    //     "updated_at" => "2016-11-16 08:04:28",
+    //    ],
+    //    ["id" => 2,
+    //     "user_id" => 1,
+    //     "title" => "Eveniet laborum sed.",
+    //     "body" => "Asperiores ut nam est fugit veritatis recusandae sint iste ratione iste fugit ut magnam non quod magnam.",
+    //     "created_at" => "2016-11-16 08:04:28",
+    //     "updated_at" => "2016-11-16 08:04:28",
+    //    ],
+    //    ["id" => 3,
+    //     "user_id" => 1,
+    //     "title" => "Et non qui.",
+    //     "body" => "Enim dicta error tenetur nostrum sunt iste molestias id qui vel nisi est eum et et.",
+    //     "created_at" => "2016-11-16 08:04:28",
+    //     "updated_at" => "2016-11-16 08:04:28",
+    //    ],
+    //];
+    //return view('loop')->with('posts', $posts);
+    return view('loop')->with('posts', \App\Post::paginate(10));
 });
 
 Route::get('dbquery', function () {
