@@ -22,8 +22,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Post::class, function (Faker\Generator $faker) {
     return [
-        'user_id' => 1,
         'title' => $faker->sentence(2),
         'body' => $faker->sentence(14),
+    ];
+});
+
+$factory->define(App\Models\Reward::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word,
     ];
 });

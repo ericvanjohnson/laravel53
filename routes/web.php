@@ -49,6 +49,10 @@ Route::get('loop', function () {
     return view('loop')->with('posts', \App\Post::paginate(10));
 });
 
+Route::get('/user/{id}', function ($id) {
+    return \App\User::find($id);
+});
+
 Route::get('dbquery', function () {
     $posts = DB::table('posts')->get();
     dd($posts);

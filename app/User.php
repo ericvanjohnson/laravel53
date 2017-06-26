@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'is_admin'
     ];
 
     /**
@@ -25,6 +25,24 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'created_at', 'updated_at'
     ];
+
+    protected $appends = [
+        'link'
+    ];
+
+    public function getLinkAttribute() {
+        return url('profile/'. $this->id);
+    }
+
+    public function scopeDiegodev($query)
+    {
+        return $query->where('email', 'like', '%@diegodev.com');
+    }
+
+    public function scopeOfType($query, $type)
+    {
+        return $query->whereType($type);
+    }
 }
