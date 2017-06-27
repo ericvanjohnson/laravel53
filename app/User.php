@@ -32,6 +32,10 @@ class User extends Authenticatable
         'link'
     ];
 
+     public function posts() {
+         return $this->hasMany('App\Models\Post');
+     }
+
     public function getLinkAttribute() {
         return url('profile/'. $this->id);
     }
@@ -41,8 +45,18 @@ class User extends Authenticatable
         return $query->where('email', 'like', '%@diegodev.com');
     }
 
-    public function scopeOfType($query, $type)
+    public function scopeOfRole($query, $type)
     {
-        return $query->whereType($type);
+        return $query->whereRole($type);
+    }
+
+    public function setNameAttribute($value)
+    {
+        $this->attributes['name'] = ucwords(strtolower($value));
+    }
+
+    public function setEmailAttribute($value)
+    {
+        $this->attributes['email'] = strtolower($value);
     }
 }
