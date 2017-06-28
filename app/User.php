@@ -40,6 +40,10 @@ class User extends Authenticatable
         return url('profile/'. $this->id);
     }
 
+    public function getEmailAttribute($value) {
+        return strtoupper($value);
+    }
+
     public function scopeDiegodev($query)
     {
         return $query->where('email', 'like', '%@diegodev.com');
