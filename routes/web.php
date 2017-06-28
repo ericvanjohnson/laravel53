@@ -53,12 +53,16 @@ Route::get('/user/{id}', function ($id) {
     return \App\User::find($id);
 });
 
-Route::get('/posts/{user}', function ( App\User $user ) {
+Route::get('/user/{user}/posts', function ( App\User $user ) {
     return $user->posts()->get();
 });
 
-Route::get('/posts/id/{post}', function ( App\Models\Post $post ) {
+Route::get('/post/{post}/user', function ( App\Models\Post $post ) {
     return $post->user()->get();
+});
+
+Route::get('/post/{post}', function ( App\Models\Post $post ) {
+    dd($post->published_at);
 });
 
 Route::get('dbquery', function () {

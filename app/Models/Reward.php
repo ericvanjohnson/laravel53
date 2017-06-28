@@ -13,4 +13,6 @@ class Reward extends Model
 
     protected $primaryKey = 'reward_id';
 
+    protected $fillable = ['name'];
+
 }
